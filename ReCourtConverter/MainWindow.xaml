@@ -1,0 +1,33 @@
+﻿<Window x:Class="ReCourtConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReCourtConverter"
+        mc:Ignorable="d"
+        Title="ReCourt Converter v0.1" Height="233.413" Width="324.318">
+	<Grid Background="#FF436DBD">
+		<Button x:Name="button" Content="Wskaż plik z protokołem do konwersji." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="224" Height="28" Click="Button_Click" Background="#FF70DC5D">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<Label x:Name="label" Content="" HorizontalAlignment="Left" Margin="293,40,0,0" VerticalAlignment="Top" Width="448" Height="67"/>
+		<Button x:Name="button1" Content="Wskaż folder zapisu i rozpocznij konwersję" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Width="224" Height="26" Background="#FFD0C33F" Click="Button1_Click">
+			<Button.Effect>
+				<DropShadowEffect/>
+			</Button.Effect>
+		</Button>
+		<ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="102,86,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+			<ComboBox.Effect>
+				<DropShadowEffect/>
+			</ComboBox.Effect>
+			<ComboBoxItem Content="MP3" HorizontalAlignment="Left" Width="118.539130434783"/>
+			<ComboBoxItem Content="AAC" HorizontalAlignment="Left" Width="118.539130434783"/>
+			<ComboBoxItem Content="AC3" HorizontalAlignment="Left" Width="118.539130434783"/>
+			<ComboBoxItem Content="WAV" HorizontalAlignment="Left" Width="118.539130434783"/>
+		</ComboBox>
+		<Label x:Name="label1" Content="Wybierz format:" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top"/>
+
+	</Grid>
+</Window>
