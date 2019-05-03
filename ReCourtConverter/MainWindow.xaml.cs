@@ -33,7 +33,7 @@ namespace ReCourtConverter
         {
             var Open = string.Empty;
             var fileLoadPath = string.Empty;
-            var Dupa = label.Content;
+      
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Protokół audio rozprawy sądowej (*.oga)|*.oga;";
             if (openFileDialog.ShowDialog() == true)
